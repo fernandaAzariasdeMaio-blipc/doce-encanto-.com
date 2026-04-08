@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio – Doce Encanto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-ornament">✦</span>
+        <span class="logo-text">Doce Encanto</span>
+        <span class="logo-ornament">✦</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html" class="active">Cardápio</a>
+        <a href="contato.html">Pedidos</a>
+      </nav>
+      <button class="nav-cta" onclick="window.location.href='contato.html'">Fazer Pedido</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="contato.html">Pedidos</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="section-overline light">Nossos sabores</p>
+    <h1 class="page-hero-title">Cardápio</h1>
+    <div class="gold-rule center"></div>
+    <p class="page-hero-sub">Cada doce preparado com ingredientes selecionados e muito carinho</p>
+  </section>
+
+  <!-- FILTROS -->
+  <div class="filtros-bar">
+    <button class="filtro-btn active" data-filter="todos">Todos</button>
+    <button class="filtro-btn" data-filter="brigadeiro">Brigadeiros</button>
+    <button class="filtro-btn" data-filter="classico">Clássicos</button>
+    <button class="filtro-btn" data-filter="especial">Especiais</button>
+    <button class="filtro-btn" data-filter="presente">Presentes</button>
+  </div>
+
+  <!-- CARDÁPIO GRID -->
+  <section class="cardapio-section">
+    <div class="cardapio-grid">
+
+      <div class="produto-card section-reveal" data-category="brigadeiro classico">
+        <div class="produto-img">
+          <span class="produto-emoji-lg">🍫</span>
+          <div class="produto-badge">Clássico</div>
+        </div>
+        <div class="produto-body">
+          <h3>Brigadeiro Tradicional</h3>
+          <p>O clássico que nunca sai de moda. Preparado com chocolate belga de alta qualidade e granulado crocante.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="brigadeiro especial">
+        <div class="produto-img rose">
+          <span class="produto-emoji-lg">🥛</span>
+          <div class="produto-badge rose">Favorito</div>
+        </div>
+        <div class="produto-body">
+          <h3>Brigadeiro de Ninho</h3>
+          <p>Cremoso, suave e irresistível. Feito com leite em pó premium, derrete na boca.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal destaque" data-category="brigadeiro especial">
+        <div class="produto-img gold">
+          <span class="produto-emoji-lg">✨</span>
+          <div class="produto-badge gold">Mais pedido</div>
+        </div>
+        <div class="produto-body">
+          <h3>Ninho com Nutella</h3>
+          <p>A combinação perfeita: leite ninho cremoso por fora, recheio surpreendente de Nutella por dentro.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="brigadeiro especial">
+        <div class="produto-img dark">
+          <span class="produto-emoji-lg">🖤</span>
+          <div class="produto-badge dark">Sofisticado</div>
+        </div>
+        <div class="produto-body">
+          <h3>Brigadeiro Meio Amargo</h3>
+          <p>Para quem aprecia o sofisticado. Chocolate 70% cacau, intenso e equilibrado.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="classico">
+        <div class="produto-img bege">
+          <span class="produto-emoji-lg">🤍</span>
+          <div class="produto-badge bege">Clássico</div>
+        </div>
+        <div class="produto-body">
+          <h3>Beijinho</h3>
+          <p>Coco fresco ralado, suavidade e delicadeza que todo mundo adora desde criança.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="classico">
+        <div class="produto-img bege">
+          <span class="produto-emoji-lg">🤎</span>
+          <div class="produto-badge bege">Clássico</div>
+        </div>
+        <div class="produto-body">
+          <h3>Casadinho</h3>
+          <p>A combinação clássica de brigadeiro e beijinho que todo mundo ama. Duplamente irresistível.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">por unidade ou caixas</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="especial">
+        <div class="produto-img rose">
+          <span class="produto-emoji-lg">🎂</span>
+          <div class="produto-badge rose">Especial</div>
+        </div>
+        <div class="produto-body">
+          <h3>Mini Bolos</h3>
+          <p>Bolinhos individuais decorados com carinho, perfeitos para festas, aniversários ou um mimo especial.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">sob encomenda</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produto-card section-reveal" data-category="presente">
+        <div class="produto-img gold">
+          <span class="produto-emoji-lg">🎁</span>
+          <div class="produto-badge gold">Presente</div>
+        </div>
+        <div class="produto-body">
+          <h3>Caixas de Presente</h3>
+          <p>Montadas com carinho, embalagem elegante e personalizada. Perfeitas para aniversários, datas especiais ou simplesmente presentear quem você ama.</p>
+          <div class="produto-footer">
+            <span class="produto-unidade">vários tamanhos</span>
+            <a href="contato.html" class="produto-pedir">Pedir →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFO ENCOMENDAS -->
+  <section class="info-section section-reveal">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">⏰</div>
+        <h4>Antecedência</h4>
+        <p>Encomendas com mínimo de 48 horas de antecedência para garantir a frescura e qualidade dos doces.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📦</div>
+        <h4>Embalagem</h4>
+        <p>Todos os doces saem em embalagens cuidadosamente montadas, prontas para presentear ou consumir.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✉</div>
+        <h4>Personalização</h4>
+        <p>Posso personalizar as caixas com mensagens especiais, laços e decorações para sua ocasião.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section-reveal">
+    <div class="cta-bg-ornament"></div>
+    <div class="cta-content">
+      <p class="section-overline light">Escolheu o que queria?</p>
+      <h2>Vamos fazer<br><em>seu pedido!</em></h2>
+      <p class="cta-sub">Entre em contato pelo WhatsApp e receba seu pedido com todo cuidado que merece.</p>
+      <a href="contato.html" class="btn-whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Pedir pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-ornament">✦</span> Doce Encanto <span class="logo-ornament">✦</span>
+        </div>
+        <p class="footer-tagline">Doces artesanais feitos com amor</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="contato.html">Pedidos</a>
+      </div>
+      <div class="footer-social">
+        <p>Siga no Instagram</p>
+        <a href="#" class="insta-link">@doceencanto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Doce Encanto – Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
